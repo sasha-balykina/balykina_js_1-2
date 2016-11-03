@@ -53,9 +53,9 @@
       }
 
       function pow(x, y) {
-          var res = x;
-          for (var i = 1; i < y; i++) {
-              res = res * x;
+          var res = 1;
+          for (var i = 1; i <= Math.abs(y); i++) {
+              res *= x;
           }
           return res;
       }
